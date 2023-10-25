@@ -1,0 +1,77 @@
+.main {
+    background: url('../../../../public/img/BG.jpg') center center/cover no-repeat;
+    height: 640px;
+    padding-top: 32px;
+    &__title{
+        color: #FFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Merienda;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 111px;
+        margin-bottom: 0;
+    }
+    &__img{
+        margin-top: 20px;
+    }
+    &__img-wrapper{
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            right: 234px;
+            top: 79px;
+            background: #FFF;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            left: 234px;
+            top: 79px;
+            background: #FFF;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+    }
+    &__wrapper{
+        position: relative;
+        width: 670px;
+        margin: 0 auto;
+    }
+    &__descr{
+        color: #FFF;
+        font-family: Merienda;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 530px;
+        margin: 0 auto;
+        margin-top: 35px;
+    }
+    &__button{
+        background: transparent;
+        border-radius: 3px;
+        border: 1px solid #FFF;
+        background: rgba(196, 196, 196, 0.00);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        width: 120px;
+        height: 30px;
+        color: #FFF;
+        font-family: Merienda;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 23px;
+        cursor: pointer;
+    }
+}
+

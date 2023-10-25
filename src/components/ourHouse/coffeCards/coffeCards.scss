@@ -1,0 +1,73 @@
+.coffeeCards{
+    &__wrapper{
+        display: flex;
+        width: 693px;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    &__looking-wrapper{
+        width: 284px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__filter-wrapper{
+        width: 326px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__buttons-wrapper{
+        width: 230px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__looking{
+        color: #000;
+        text-align: center;
+        font-family: Merienda;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__input{
+        width: 180px;
+        height: 30px;
+        border-radius: 4px;
+        background: #FFF;
+        box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+        color: rgba(0, 0, 0, 0.50);
+        border: none;
+        text-align: center;
+        font-family: Merienda;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__filter{
+        color: #000;
+        text-align: center;
+        font-family: Merienda;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__button{
+        width: 75px;
+        height: 30px;
+        border: 0;
+        border-radius: 4px 0px 0px 4px;
+        background: #FFF;
+        box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+}

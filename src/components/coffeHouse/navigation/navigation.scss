@@ -1,0 +1,42 @@
+.navigation{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    width: 355px;
+    justify-content: space-between;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    &_black{
+        margin: 0 auto;
+    }
+    &__item{
+        a{
+            color: #FFF;
+            font-family: Merienda;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+            
+        }
+    }
+    &__item_black{
+        a{
+            color: black;
+            font-family: Merienda;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+            
+        }
+    }
+    &__coffee{
+        position: absolute;
+        bottom: 3px;
+        left: -33px;
+    }
+}
