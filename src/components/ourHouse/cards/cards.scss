@@ -1,7 +1,52 @@
-.coffeCards__item{
+.cards{
     width: 220px;
     height: 260px;
-    padding: 37px 27px 22px 26px;
     border-radius: 8px;
-    background: #FFF;
+    background: white;
+    padding: 0;
+    margin: 0;
+    padding: 37px 27px 22px 26px;
+    list-style-type: none;
+    margin-top: 60px;
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    a{
+        display: block;
+        position: absolute;
+        width: 220px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 37px 27px 22px 26px;
+    }
+    &__title{
+        margin-top: 14px;
+        color: #000;
+        text-align: center;
+        font-family: Merienda;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__from{
+        margin-top: 14px;
+        color: #000;
+        text-align: right;
+        font-family: Merienda;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__price{
+        margin-top: 14px;
+        color: #000;
+        text-align: right;
+        font-family: Merienda;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
 }

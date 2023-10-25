@@ -8,6 +8,8 @@ import AppTwoPage from './components/ourHouse/app/appTwoPage';
 
 import { Route, Routes, Link  } from 'react-router-dom';
 
+import './bootstrap-reboot.min.scss'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>

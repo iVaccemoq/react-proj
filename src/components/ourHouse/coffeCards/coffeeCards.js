@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './coffeCards.scss'
 
 import Cards from '../cards/cards';
+import Footer from '../../coffeHouse/footer/footer';
 
 class CoffeeCards extends Component {
     render() {
@@ -25,7 +26,7 @@ class CoffeeCards extends Component {
                             </div>
                         </div>
                     </div>
-                    <ol className="coffeeCrds__items">
+                    <ol className="coffeeCards__items">
                         <Cards/>
                         <Cards/>
                         <Cards/>

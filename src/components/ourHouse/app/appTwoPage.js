@@ -2,6 +2,8 @@
 import MainthemeTwoPage from "../main-theme/mainThemeTwoPage";
 import AboutUsTwoPage from "../aboutUsTwoPage/aboutUsTwoPage";
 import CoffeeCards from "../coffeCards/coffeeCards";
+import Footer from "../../coffeHouse/footer/footer";
+
 
 function AppTwoPage() {
   return (
@@ -10,6 +12,7 @@ function AppTwoPage() {
       <MainthemeTwoPage/>
       <AboutUsTwoPage/>
       <CoffeeCards/>
+      <Footer/>
     </div> 
     
     </>  
