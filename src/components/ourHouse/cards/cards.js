@@ -6,7 +6,7 @@ class Cards extends Component {
     render() {
         return (
             <li className="cards">
-                <a href="/">
+                <a href="/coffee/promo">
                     <img src="./icons/picture3.png" alt="coffee" />
                     <h2 className="cards__title">AROMISTICO Coffee 1 kg</h2>
                     <div className="cards__from">Brazil</div>

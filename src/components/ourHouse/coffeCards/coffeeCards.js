@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './coffeCards.scss'
 
 import Cards from '../cards/cards';
-import Footer from '../../coffeHouse/footer/footer';
+
 
 class CoffeeCards extends Component {
     render() {
