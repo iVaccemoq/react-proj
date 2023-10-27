@@ -1,3 +1,92 @@
-.Third{
-    background: url('../../../../public/img/ourHouseBg.jpg') center center/cover no-repeat;
+.third{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 865px;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+    &__big-img{
+        width: 392px;
+        height: 355px;
+    }
+    &__about-wrapper{
+        width: 418px;
+        position: relative;
+    }
+    &__title{
+        color: #000;
+        font-family: Merienda;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 21px;
+    }
+    &__img-wrapper{
+        margin-bottom: 26px;
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            right: 101px;
+            top: 70px;
+            background: black;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            left: 101px;
+            top: 70px;
+            background: black;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__country{
+        color: #000;
+        font-family: Merienda;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 16px;
+    }
+    &__font{
+        color: #000;
+        font-family: Merienda;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    &__descr{
+        color: #000;
+        font-family: Merienda;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 16px;
+    }
+    &__price{
+        color: #000;
+        font-family: Merienda;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
 }

@@ -1,13 +1,13 @@
 import MainThemeThridPage from "../main-theme/mainThemeThridPage";
 
-function AppTwoPage() {
+function AppThirdPage() {
     return (
       <>
-      <div className="twoPage">
+      <div className="ThirdPage">
         <MainThemeThridPage/>
       </div> 
       </>
     );
   }
   
-  export default AppTwoPage;
+  export default AppThirdPage;

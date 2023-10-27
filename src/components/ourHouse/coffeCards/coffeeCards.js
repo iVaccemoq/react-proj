@@ -6,7 +6,13 @@ import Cards from '../cards/cards';
 
 
 class CoffeeCards extends Component {
+
     render() {
+
+        const data = this.props.data.map(({img, from, price, title, link}) => {
+            return <Cards img={img} from={from} price={price} title={title} link={link}/>
+        })
+
         return (
             <section className='coffeeCards'>
                 <div className="container">
@@ -27,12 +33,7 @@ class CoffeeCards extends Component {
                         </div>
                     </div>
                     <ol className="coffeeCards__items">
-                        <Cards/>
-                        <Cards/>
-                        <Cards/>
-                        <Cards/>
-                        <Cards/>
-                        <Cards/>
+                        {data}
                     </ol>
                 </div>
             </section>

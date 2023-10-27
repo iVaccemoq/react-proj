@@ -14,11 +14,11 @@ class Navigation extends Component {
         let ofsset = 'navigation'
         if (this.props.color === 'black') {
             clazz = 'navigation__item_black'
-            img = './icons/coffe-black.png'
+            img = '../icons/coffe-black.png'
             ofsset += ' navigation_black'
         } else {
             clazz = 'navigation__item'
-            img = './icons/coffee.png'
+            img = '../icons/coffee.png'
         }
 
         return (

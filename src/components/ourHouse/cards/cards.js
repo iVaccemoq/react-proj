@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 
+import { Link  } from 'react-router-dom';
+
 import './cards.scss'
 
 class Cards extends Component {
     render() {
+        const {img, from, price, title, link} = this.props; 
         return (
             <li className="cards">
-                <a href="/coffee/promo">
-                    <img src="./icons/picture3.png" alt="coffee" />
-                    <h2 className="cards__title">AROMISTICO Coffee 1 kg</h2>
-                    <div className="cards__from">Brazil</div>
-                    <div className="cards__price">6.99$</div>
-                </a>
+                <Link to={link}>
+                    <img className='cards__img' src={img} alt="coffee" />
+                    <h2 className="cards__title">{title}</h2>
+                    <div className="cards__from">{from}</div>
+                    <div className="cards__price">{price}</div>
+                </Link>
             </li>
         );
     }
