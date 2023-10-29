@@ -2,17 +2,14 @@ import React, { Component } from 'react';
 
 import './ourBest.scss'
 
+import Cards from '../cards/cards';
+
 class OurBest extends Component {
     
     render() {
-        const dataCards = this.props.data.map(({img, title, price}) => {
-            console.log()
+        const dataCards = this.props.data.map(({img, title, price, id}) => {
             return (
-                <li className="ourBest__card">
-                    <img src={img} alt="picture1" className="ourBest__img" />
-                    <div className="ourBest__cardName">{title}</div>
-                    <div className="ourBest__price">{price}</div>
-                </li>
+                <Cards img={img} title={title} price={price} key={id}/>
             );
         })
         

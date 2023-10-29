@@ -9,8 +9,8 @@ class CoffeeCards extends Component {
 
     render() {
 
-        const data = this.props.data.map(({img, from, price, title, link}) => {
-            return <Cards img={img} from={from} price={price} title={title} link={link}/>
+        const data = this.props.data.map(({img, from, price, title, link, id}) => {
+            return <Cards img={img} from={from} price={price} title={title} link={link} key={id}/>
         })
 
         return (
@@ -20,7 +20,7 @@ class CoffeeCards extends Component {
                         <div className="coffeeCards__looking-wrapper">
                             <div className="coffeeCards__looking">Looking for</div>
                             <form action="/" className="coffeeCards__form">
-                                <input type="text" placeholder='start typing here...' className="coffeeCards__input" />
+                                <input onChange={(e) => this.props.onSearch(e)} type="text" placeholder='start typing here...' className="coffeeCards__input" />
                             </form>
                         </div>
                         <div className="coffeeCards__filter-wrapper">

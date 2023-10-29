@@ -20,7 +20,7 @@ console.log(r.state.dataTwoPage)
 const card = r.state.dataTwoPage.map ( ({link, img, from, descr, price}) => {
 /*   img.slice(0,5) */
   console.log(link)
-  return <Route path={link} element={<MainThemeThridPage img={img} from={from} descr={descr} price={price} />} />
+  return <Route path={link} element={<MainThemeThridPage img={img} from={from} descr={descr} price={price} />} key={3}/>
 })
 
 root.render(
@@ -28,8 +28,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<App />} />
-      <Route path='/coffee' element={<AppTwoPage />} />
+      <Route path='/' element={<App />} key={1}/>
+      <Route path='/coffee' element={<AppTwoPage />} key={2} />
       {card}
       
     </Routes>

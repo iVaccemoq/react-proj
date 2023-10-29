@@ -12,9 +12,9 @@ class App extends Component {
     super(props)
     this.state = {
       data: [
-        {title: 'Solimo Coffee Beans 2 kg', img: './icons/picture1.png', price: '10.73$'},
-        {title: 'Presto Coffee Beans 1 kg', img: './icons/picture2.png', price: '15.99$'},
-        {title: 'AROMISTICO Coffee 1 kg', img: './icons/picture3.png', price: '6.99$'}
+        {title: 'Solimo Coffee Beans 2 kg', img: './icons/picture1.png', price: '10.73$', id: 1},
+        {title: 'Presto Coffee Beans 1 kg', img: './icons/picture2.png', price: '15.99$', id: 2},
+        {title: 'AROMISTICO Coffee 1 kg', img: './icons/picture3.png', price: '6.99$', id: 3}
       ]
     }
   }
