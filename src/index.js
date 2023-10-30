@@ -12,15 +12,14 @@ import './bootstrap-reboot.min.scss'
 
 import MainThemeThridPage from './components/aboutIt/main-theme/mainThemeThridPage';
 
+import AppThirdPage from './components/aboutIt/app/appThirdPage';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const r = new AppTwoPage();
-console.log(r.state.dataTwoPage)
 
-const card = r.state.dataTwoPage.map ( ({link, img, from, descr, price}) => {
-/*   img.slice(0,5) */
-  console.log(link)
-  return <Route path={link} element={<MainThemeThridPage img={img} from={from} descr={descr} price={price} />} key={3}/>
+const card = r.state.dataTwoPage.map ( item => {
+  return <Route path={item.link} element={<AppThirdPage data={item} />} key={3}/>
 })
 
 root.render(

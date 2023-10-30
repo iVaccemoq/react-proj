@@ -1,10 +1,17 @@
 import MainThemeThridPage from "../main-theme/mainThemeThridPage";
+import Navigation from "../../coffeHouse/navigation/navigation";
 
-function AppThirdPage() {
+import './appThirdPage.scss'
+
+function AppThirdPage(props) {
+    const {data} = props;
     return (
       <>
       <div className="ThirdPage">
-        <MainThemeThridPage/>
+        <MainThemeThridPage data={data}/>
+        <footer className="ThirdPage__footer">
+          <Navigation color='black'/>
+        </footer>
       </div> 
       </>
     );

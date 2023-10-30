@@ -65,10 +65,10 @@
         cursor: pointer;
     }
     &__items{
+        column-gap: 45px;
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        justify-content: space-between;
         width: 790px;
         margin: 0 auto;
     }

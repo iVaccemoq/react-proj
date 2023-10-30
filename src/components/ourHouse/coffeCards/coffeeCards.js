@@ -26,9 +26,10 @@ class CoffeeCards extends Component {
                         <div className="coffeeCards__filter-wrapper">
                             <div className="coffeeCards__filter">Or filter</div>
                             <div className="coffeeCards__buttons-wrapper">
-                                <button className="coffeeCards__button">Brazil</button>
-                                <button className="coffeeCards__button">Kenya</button>
-                                <button className="coffeeCards__button">Columbia</button>
+                                <button onClick={(e) => this.props.onFilter(e)} className="coffeeCards__button">Brazil</button>
+                                <button onClick={(e) => this.props.onFilter(e)} className="coffeeCards__button">Kenya</button>
+                                <button onClick={(e) => this.props.onFilter(e)} className="coffeeCards__button">Columbia</button>
+                                <button onClick={(e) => this.props.onFilter(e)} className="coffeeCards__button">all</button>
                             </div>
                         </div>
                     </div>
