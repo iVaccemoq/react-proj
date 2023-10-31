@@ -21,19 +21,19 @@ class AppTwoPage extends Component {
         {img: "../icons/yamaika.jpg", from: 'Columbia', price: '39.99$', title:'Columbia Coffee 1 kg', link:'/promo6', filter: false, id:6, descr:'это смесь сьюпремо и экстра, что придает кофе этого класса достаточно сильную кислинку и винное послевкусие.'},
       ],
       currentValue: '',
-      currentFilter: [0,1,2,3,4,5],
+      currentFilter: []
+
     }
+
   }
 
-  FillingAnArray = () => {
-    const b = this.state.dataTwoPage.map((item, i) => i);
-    console.log(b);
-    this.setState({
-      currentFilter: [...b]
-    });
-  };
-
+  componentDidMount = () => {
+    const b = this.state.dataTwoPage.map((item,i) => i)
+    this.setState({ currentFilter: b });
+  }
+  
   search = () => { 
+    
     const reg = new RegExp(this.state.currentValue);
     let arr = [];
 
